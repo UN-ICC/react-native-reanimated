@@ -42,9 +42,9 @@ def getCurrentFlavor() {
     Matcher matcher = pattern.matcher(taskRequestName)
 
     if(matcher.find()) {
-        return matcher.group(1).toLowerCase()
+        return matcher.group(1)
     }
-    return ""
+    return "Dev"
 }
 
 def replaceSoTaskDebug
